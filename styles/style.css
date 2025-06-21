@@ -178,6 +178,9 @@ body {
 
 .card__text-me {
   padding-left: 25px;
+}
+
+.card__text-me:last-of-type {
   padding-bottom: 25px;
 }
 
