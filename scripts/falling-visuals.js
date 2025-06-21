@@ -30,7 +30,7 @@ style.textContent = `
   pointer-events: none;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: -2;
   overflow: hidden;
 }
 .falling {
@@ -38,20 +38,20 @@ style.textContent = `
   top: -40px;
   color: #000;
   font-family: monospace;
-  font-size: 18px;
+  font-size: 8px;
   opacity: 1;
   animation: fall-down linear forwards;
 }
 .falling svg {
-  width: 24px;
-  height: 24px;
+  width: 4px;
+  height: 4px;
   fill: #000;
-  opacity: 0.8;
+  opacity: 1;
 }
 @keyframes fall-down {
   0% {
     transform: translateY(0);
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     transform: translateY(110vh);

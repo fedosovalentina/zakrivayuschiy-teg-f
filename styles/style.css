@@ -124,9 +124,6 @@ body {
   margin-top: 100px;
 }
 
-/* .card { 
-  display: grid;
-} */
 
 .card__title {
   padding: 5px 10px;
@@ -200,7 +197,6 @@ body {
 
 .card__icon-button:focus-visible {
   border: black solid 2px;
- 
 }
 
 .card__icon-button:focus{
@@ -210,24 +206,13 @@ body {
 .like-icon {
   width: 39px;
   height: 36px;
- 
   cursor: pointer;
- 
- 
 }
-
-
-
-
-
 
 .card__like-button {
   width: 130px;
   height: 38px;
 }
-
-
-
 
 
 /************************** Footer/Save button **************************/
@@ -304,6 +289,7 @@ body:has(dialog[open]) {
   overflow: hidden;
 }
 
+
 @media (max-width: 375px) {
   .save-dialog {
     width: 341px;
@@ -315,6 +301,12 @@ body:has(dialog[open]) {
   }
 }
 
-* {
-  outline: 1px dashed rgb(2, 241, 249);
+
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }

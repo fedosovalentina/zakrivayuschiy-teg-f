@@ -10,21 +10,17 @@
 
 */
 
-/* Hover (заливка контурным цветом) */
-/* .like-icon:hover .core {
-  fill: var(--contour-color);
-  transition: fill 0.3s ease;
-} */
-:root {
-  --black: #000;
-  --red:
-}
+
 
 .main-body,
 .core,
 .sparks {    
   fill: transparent;
   transition: fill 0.5s ease;
+}
+
+.contour {
+  transition: fill 0.1s linear;
 }
 
 /* Hover */
