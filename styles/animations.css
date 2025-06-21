@@ -27,11 +27,6 @@
   transition: fill 0.5s ease;
 }
 
-.heart {
-  transform: scale(1);
-  transform-origin: center;
-}
-
 /* Hover */
 
 .like-icon:hover .core {
@@ -80,16 +75,25 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: pulse 0.3s ease;
-}
 
-.like-icon:not(.is-liked) .heart {
-   scale: 1;
+  animation: pulse 0.3s ease-in-out 0.06s 1 forwards;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
-  fill: var(--animation-fill-color);
-  transition-delay: 0.06s;
+  animation: spark 0.3s ease-in-out 0.12s 1 forwards;
 }
 
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+@keyframes spark {
+  0%   { fill: none; }
+  50%  { fill: var(--animation-fill-color); }
+  100% { fill: none; }
+}
 
