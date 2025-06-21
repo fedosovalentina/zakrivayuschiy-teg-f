@@ -2,7 +2,7 @@
 
 :root {
   /* Шрифты */
-  --font-main: "Inter", system-ui, sans-serif;
+  --font-main: "Inter-Variable", system-ui, sans-serif;
   --font-accent: "PressStart2P", monospace;
 
   /* Толщина основного текста */

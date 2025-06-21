@@ -168,8 +168,24 @@ body {
 
 .card__text {
   margin: 0;
-  padding: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
 }
+
+.card__text-practicum {
+  padding-left: 25px;
+}
+
+.card__text-me {
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+
+.slanted {
+  font-weight: 500;
+  font-variation-settings: "slnt" -10;
+}
+
 
 /************************** Like **************************/
 
