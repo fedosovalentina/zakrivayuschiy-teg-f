@@ -9,3 +9,87 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+/* Hover (заливка контурным цветом) */
+/* .like-icon:hover .core {
+  fill: var(--contour-color);
+  transition: fill 0.3s ease;
+} */
+:root {
+  --black: #000;
+  --red:
+}
+
+.main-body,
+.core,
+.sparks {    
+  fill: transparent;
+  transition: fill 0.5s ease;
+}
+
+.heart {
+  transform: scale(1);
+  transform-origin: center;
+}
+
+/* Hover */
+
+.like-icon:hover .core {
+  fill: var(--accent-color);
+}
+
+.like-icon:hover .main-body {
+  fill: var(--accent-color);
+  transition-delay: 0.03s;
+}
+
+.like-icon:not(:hover) .core {
+  transition-delay: 0.03s;
+}
+
+
+/* Active */
+
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.03s;
+}
+
+.like-icon:not(:active) .core {
+  transition-delay: 0.03s;
+}
+
+/* Клик — is-liked */
+
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.03s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .heart {
+  animation: pulse 0.3s ease;
+}
+
+.like-icon:not(.is-liked) .heart {
+   scale: 1;
+}
+
+.like-icon.is-liked .sparks {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.06s;
+}
+
+

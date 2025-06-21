@@ -1,18 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+<link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+<!-- Иконка для тёмной темы -->
+<link rel="icon" href="./images/favicon-dark.ico" media="(prefers-color-scheme: dark)" sizes="any">
+<link rel="icon" href="./images/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
+
+<link rel="apple-touch-icon" href="./images/favicon.png">
+
+
+
     <title>Закрывающий тег</title>
+
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/animations.css" /> 
+    <link rel="stylesheet" href="./styles/filters.css" />
+    
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header block-fluid block-decorated">
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <h2 class="header__subtitle">Закрывающий тег</h2>
+    </header>
+    <main>
+      <ul class="block-fluid card-list">
+
+
+        <!-- Первая карточка -->
+        <li class="card block-decorated">
+          <h2 class="card__title">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+
+          <picture class="image-container filter-mayfair">
+            <source srcset="../images/zero.webp" type="image/webp" />
+            <img
+              src="../images/zero.jpg"
+              alt="Alchemist! Now we're cookin"
+              loading="lazy"
+              class="image-responsive"
+            />
+            <span class="image-overlay-text image-overlay-text-stroke" aria-hidden="true">
+              &lt;/HTML&gt;
+            </span>
+          </picture>
+
+          <p class="card__text">
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+
+          <div class="card__actions">
+            <button class="card__icon-button" aria-label="Поставить лайк">
+              <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 36">
+                <g class="heart">
+                  <path class="contour" fill="var(--contour-color)"
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" />
+                  <path class="main-body" fill="none"
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z" />
+                  <path class="core" fill="none"
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" />
+                </g>
+                <path class="sparks" fill="none"
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" />
+              </svg>
+            </button>
+            
+            <button class="card__like-button button card__like-animation">
+              <span class="card__like-text">Like</span>
+            </button>
+          </div>
+        </li>
+
+
+        <!-- Вторая карточка -->
+        <!-- Третья карточка -->
+        <!-- Четвертая карточка -->
+        <!-- Пятая карточка -->
+        <!-- Шестая карточка -->
+        <!-- Седьмая карточка -->
+        <!-- Восьмая карточка -->
+        <!-- Девятая карточка -->
+        <!-- Десятая карточка -->
+      </ul>
+    </main>
+
+    <footer class="footer">
+      <button onclick="window['save-dialog'].showModal()" class="save-button button">
+        <svg class="save-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg> 
+      
+        <span class="save-button__text">Сохранить на память</span>
+      </button>
+
+      <dialog id="save-dialog" class="save-dialog block-decorated">
+        <div class="save-dialog__content">
+          <svg class="save-dialog-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg> 
+          <p class="save-dialog__text">
+            Вставьте<br />
+            дискету, чтобы<br />
+            продолжить
+          </p>
+        </div>
+          <button
+            onclick="window['save-dialog'].close()"
+            class="save-dialog__ok button"
+          >
+            OK
+          </button>
+        
+      </dialog>
+      
+    </footer>
     <script src="./scripts/like.js"></script>
+    <script src="./scriptsfalling-visuals.js"></script>
   </body>
 </html>

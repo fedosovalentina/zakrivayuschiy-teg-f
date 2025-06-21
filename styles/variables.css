@@ -1,1 +1,55 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  /* Шрифты */
+  --font-main: "Inter", system-ui, sans-serif;
+  --font-accent: "PressStart2P", monospace;
+
+  /* Толщина основного текста */
+  --text-weight: 400;
+  --heading-weight: 700;
+
+  /* Размер шрифта заголовков */
+  --title-font-size: clamp(49px, 1.43vw + 44.4px, 65px);
+  --subtitle-font-size: clamp(14px, 0.8vw + 14px, 23px);
+
+  /* Хедер */
+  --header-aspect-ratio: calc(700 / 368);
+  --header-padding: clamp(10px, 4vw, 40px);
+  --fluid-width: clamp(
+    375px,
+    calc(375px + (100vw - 375px) * 325 / 1065),
+    700px
+  );
+
+
+
+  --page-background-color: rgb(171, 169, 169);
+  --block-background-color: rgb(255, 255, 255);
+  --accent-color: black;
+  --contour-color: black;
+  --animation-fill-color: red;
+  --bg-gradient: 
+    /* 1. Горизонтальные полоски (слева направо, каждые 2px) */
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    /* 2. Вертикальные полоски (сверху вниз, каждые 2px) */
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    /* 3. Плавный градиент от светлого к тёмному */
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
+}

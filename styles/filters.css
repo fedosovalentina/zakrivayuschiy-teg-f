@@ -1,0 +1,144 @@
+/* Общая базовая настройка */
+.filter-aden,
+.filter-1977,
+.filter-mayfair,
+.filter-lofi,
+.filter-valencia,
+.filter-xpro2,
+.filter-rise,
+.filter-earlybird,
+.filter-walden,
+.filter-hefe {
+  position: relative;
+}
+
+/* Aden */
+.filter-aden {
+  filter: hue-rotate(-20deg) contrast(0.9) saturate(0.85) brightness(1.2);
+}
+.filter-aden:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(66,10,14,0.2), transparent);
+  mix-blend-mode: darken;
+  pointer-events: none;
+}
+
+/* 1977 */
+.filter-1977 {
+  filter: contrast(1.1) brightness(1.1) saturate(1.3);
+}
+.filter-1977:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(243,106,188,0.3);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+/* Mayfair */
+.filter-mayfair {
+  filter: contrast(1.1) saturate(1.1);
+}
+.filter-mayfair:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 40% 40%, rgba(255,255,255,0.8), rgba(255,200,200,0.6), #111 60%);
+  mix-blend-mode: overlay;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Lo-fi */
+.filter-lofi {
+  filter: saturate(1.1) contrast(1.5);
+}
+.filter-lofi:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 70%, #222 150%);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Valencia */
+.filter-valencia {
+  filter: sepia(0.25) contrast(1.1) brightness(1.1);
+}
+.filter-valencia:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 204, 128, 0.2);
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+
+/* X-Pro II */
+.filter-xpro2 {
+  filter: contrast(1.25) saturate(1.25);
+}
+.filter-xpro2:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.2), transparent 70%);
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* Rise */
+.filter-rise {
+  filter: brightness(1.1) sepia(0.2);
+}
+.filter-rise:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255, 200, 150, 0.2), transparent);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+/* Earlybird */
+.filter-earlybird {
+  filter: sepia(0.4) contrast(1.2);
+}
+.filter-earlybird:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(102, 34, 0, 0.2), transparent 70%);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Walden */
+.filter-walden {
+  filter: brightness(1.2) sepia(0.3) saturate(1.2);
+}
+.filter-walden:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 204, 0.3);
+  mix-blend-mode: lighten;
+  pointer-events: none;
+}
+
+/* Hefe */
+.filter-hefe {
+  filter: contrast(1.2) saturate(1.3) brightness(1.05);
+}
+.filter-hefe:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.3), transparent 60%);
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}

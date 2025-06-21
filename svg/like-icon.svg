@@ -1,0 +1,15 @@
+
+
+<svg  viewBox="0 0 39 36" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="heart">
+    <g class="heart">
+      <path symbol id="contour" class="contour" fill="var(--contour-color)" d="..." />
+      <path symbol id="main-body" class="main-body" fill="none" d="..." />
+      <path symbol id="core" class="core" fill="none" d="..." />
+    </g>
+  </symbol>
+
+  <symbol id="sparks">
+    <path class="sparks" fill="var(--animation-fill-color)" d="..." />
+  </symbol>
+</svg>
