@@ -12,12 +12,17 @@
 
   /* Размер шрифта заголовков */
   --title-font-size: clamp(49px, 3vw + 20px, 65px);
-  --subtitle-font-size: clamp(14px, 0.8vw + 14px, 23px);
+  --subtitle-font-size: clamp(14px, 1.2vw + 10px, 23px);
 
   /* Хедер */
-  --header-aspect-ratio: calc(700 / 368);
+  /* --header-aspect-ratio: calc(700 / 368); */
   --fluid-padding: clamp(10px, 4vw, 40px);
   --fluid-width: clamp(320px, 100%, 700px);
+
+  /* @media (max-width: 375px) {
+    --header-aspect-ratio: calc(375 / 327);
+  } */
+  
 
  /* Красота */
   --page-background-color: rgb(171, 169, 169);

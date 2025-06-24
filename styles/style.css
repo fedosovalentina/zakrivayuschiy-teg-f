@@ -24,7 +24,7 @@ body {
   font-variation-settings: "wght" var(--text-weight);
   font-size: 18px;
   background-color: var(--page-background-color);
-  min-inline-size: 320px;
+  min-inline-size: 375px;
   min-block-size: 100dvb; 
   scrollbar-gutter: stable; 
 }
@@ -102,14 +102,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   box-sizing: border-box;
   margin: 100px auto;
   padding: var(--fluid-padding);
   font-family: var(--font-accent);
   line-height: 1;
   text-transform: uppercase;
-  aspect-ratio: var(--header-aspect-ratio);
+  height: clamp(327px, calc(327px + (100vw - 375px) * 0.0385), 368px);
+  /* aspect-ratio: var(--header-aspect-ratio); */
 }
 
 .header__title {
@@ -179,6 +180,12 @@ body {
   align-content: center;
   gap: 10px;
   margin: 25px;
+}
+
+@media (max-width: 375px) {
+  .image-overlay-text {
+    right: 13px;
+  }
 }
 
 /************************** Like **************************/
@@ -282,7 +289,7 @@ body {
 
 .save-dialog__content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
 }
 
