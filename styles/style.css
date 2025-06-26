@@ -298,11 +298,8 @@ body {
   
   line-height: 1.5;
   text-align: left;
-  max-inline-size: 180px;
-
-  font-weight: 400;
+  max-inline-size: 234px;
   font-size: 14px;
-  letter-spacing: 0%;
   text-transform: uppercase;
 }
 
