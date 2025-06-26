@@ -109,8 +109,8 @@ body {
   font-family: var(--font-accent);
   line-height: 1;
   text-transform: uppercase;
-  height: clamp(327px, calc(327px + (100vw - 375px) * 0.0385), 368px);
-  /* aspect-ratio: var(--header-aspect-ratio); */
+
+  aspect-ratio: var(--header-aspect-ratio);
 }
 
 .header__title {
@@ -193,14 +193,11 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   padding: 0 25px 25px 0;
 }
 
 .card__icon-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 38px;
   height: 38px;
   border: transparent solid 2px;
@@ -298,10 +295,15 @@ body {
 }
 
 .save-dialog__text {
-  font-size: 12px;
+  
   line-height: 1.5;
   text-align: left;
   max-inline-size: 180px;
+
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
 
 .save-dialog__ok {

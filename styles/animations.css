@@ -24,17 +24,31 @@
 
 /* Hover */
 
+/* .core: при наведении — сразу, при уходе — с задержкой */
 .like-icon:hover .core {
   fill: var(--accent-color);
-}
-
-.like-icon:hover .main-body {
-  fill: var(--accent-color);
-  transition-delay: 0.03s;
+  transition-delay: 0s;
 }
 
 .like-icon:not(:hover) .core {
+  fill: transparent;
   transition-delay: 0.03s;
+}
+
+/* .main-body: при наведении — с задержкой, при уходе — без */
+.like-icon:hover .main-body {
+  fill: var(--accent-color);
+  transition-delay: 0.05s;
+}
+
+.like-icon:not(:hover) .main-body {
+  fill: transparent;
+  transition-delay: 0s;
+}
+
+/* .contour: заливается тем же цветом */
+.like-icon:hover .contour {
+  fill: var(--accent-color);
 }
 
 /* Active */

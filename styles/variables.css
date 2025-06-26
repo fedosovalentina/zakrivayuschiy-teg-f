@@ -15,13 +15,13 @@
   --subtitle-font-size: clamp(14px, 1.2vw + 10px, 23px);
 
   /* Хедер */
-  /* --header-aspect-ratio: calc(700 / 368); */
+  --header-aspect-ratio: calc(700 / 368);
   --fluid-padding: clamp(10px, 4vw, 40px);
   --fluid-width: clamp(320px, 100%, 700px);
 
-  /* @media (max-width: 375px) {
+  @media (max-width: 375px) {
     --header-aspect-ratio: calc(375 / 327);
-  } */
+  }
   
 
  /* Красота */
